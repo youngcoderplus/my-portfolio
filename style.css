@@ -1,0 +1,274 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    /* HEADER */
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile-img {
+      width: 218px;
+      height: 218px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
+      margin-bottom: 1rem;
+    }
+
+    .profile-img:hover {
+      width: 318px;
+      height: 318px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid red;
+      margin-bottom: 1rem;
+      transition-duration: 2s;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+    }
+
+    .header p {
+      color: #94a3b8;
+      margin-top: 0.5rem;
+    }
+
+    /* SOCIAL LINKS */
+    .social-links {
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      color: #e5e7eb;
+      margin: 0 10px;
+      font-size: 1.4rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #38bdf8;
+    }
+
+    /* SECTIONS */
+    section {
+      margin-top: 2.5rem;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #38bdf8;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* PROJECTS */
+    .projects {
+      margin-top: 1rem;
+    }
+
+    .project {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .project a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+
+
+  
+
+
+
+
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: #1e293b;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.intro {
+  max-width: 600px;
+  margin: auto;
+  opacity: 0.8;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.btn-outline {
+  padding: 12px 25px;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* SKILLS */
+.skills-section {
+  padding: 50px 10%;
+}
+
+.skill-box {
+  margin-bottom: 40px;
+}
+
+.skill-box h2 {
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+/* PROJECTS */
+.projects-section {
+  padding: 50px 10%;
+}
+
+.project-card {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.project-card img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.project-info {
+  max-width: 500px;
+}
+
+.ticker-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #111;
+  padding: 12px 0;
+  border-radius: 18px;
+  border: 1px solid rgb(83, 83, 83);
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 15s linear infinite;
+}
+
+.ticker-track span {
+  white-space: nowrap;
+  font-size: 18px;
+  color: #38bdf8;
+  padding-right: 60px;
+}
+
+/* LEFT ➜ RIGHT continuous movement */
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
