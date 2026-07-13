@@ -253,7 +253,7 @@ body {
 .ticker-track {
   display: flex;
   width: max-content;
-  animation: ticker-scroll 15s linear infinite;
+  animation: ticker-scroll 10s linear infinite;
 }
 
 .ticker-track span {
@@ -270,5 +270,35 @@ body {
   }
   to {
     transform: translateX(0%);
+  }
+}
+
+
+.containert{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cardt{
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+.cardt{
+  animation: fadeInScale linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 19%;
+}
+
+@keyframes fadeInScale{
+  from{
+    opacity: 0%;
+    transform: translate(-100px);
+    transform: scale(0.5);
+  } to {
+    opacity: 1;
+    background-color: rgb(43, 18, 131);
+    transform: translate(0);
   }
 }
