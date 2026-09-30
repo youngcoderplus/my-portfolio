@@ -4,11 +4,33 @@
   <meta charset="UTF-8">
   <title>Skills | YoungCoder</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 3vw;
+      flex-wrap: wrap;
+    }
+
+    .skill-box {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(247, 245, 245, 0.911);
+      color: black;
+    }
+  </style>
 </head>
+
 <body>
 
   <nav class="navbar">
     <div class="logo">Muturi John(YoungCoder)</div>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="skills.html" class="active">Skills</a></li>
@@ -21,40 +43,124 @@
 
     <h1>My Skills</h1>
 
-    <div class="skill-box">
-      <h2>HTML</h2>
-      <ul>
-        <li>Semantic structure</li>
-        <li>Forms & validation</li>
-        <li>Accessibility basics</li>
-      </ul>
-    </div>
+    <div class="container">
 
-    <div class="skill-box">
-      <h2>CSS</h2>
-      <ul>
-        <li>Flexbox & Grid</li>
-        <li>Responsive Design</li>
-        <li>Animations & transitions</li>
-        <li>Positioning & layout systems</li>
-      </ul>
-    </div>
+      <!-- HTML -->
+      <div class="skill-box">
+        <h2><i class="fa-brands fa-html5"></i> HTML</h2>
+        <ul>
+          <li>Semantic structure</li>
+          <li>Forms & validation</li>
+          <li>Accessibility basics</li>
+        </ul>
+      </div>
 
-    <div class="skill-box">
-      <h2>JavaScript</h2>
-      <ul>
-        <li>DOM Manipulation</li>
-        <li>Event Handling</li>
-        <li>Async / Await</li>
-        <li>Fetch API</li>
-        <li>Promises</li>
-        <li>Objects & Arrays</li>
-        <li>Local Storage</li>
-        <li>JSON Handling</li>
-        <li>Debugging & problem solving</li>
-      </ul>
-    </div>
+      <!-- CSS -->
+      <div class="skill-box">
+        <h2><i class="fa-brands fa-css3-alt"></i> CSS</h2>
+        <ul>
+          <li>Flexbox & Grid</li>
+          <li>Responsive Design</li>
+          <li>Animations & transitions</li>
+          <li>Positioning & layout systems</li>
+        </ul>
+      </div>
 
+      <!-- JavaScript -->
+      <div class="skill-box">
+        <h2><i class="fa-brands fa-js"></i> JavaScript</h2>
+        <ul>
+          <li>DOM Manipulation</li>
+          <li>Event Handling</li>
+          <li>Functions & Advanced Functions</li>
+          <li>Arrow Functions</li>
+          <li>Callbacks</li>
+          <li>Async / Await</li>
+          <li>Promises</li>
+          <li>Synchronous & Asynchronous Code</li>
+          <li>Fetch API</li>
+          <li>Modules</li>
+          <li>Objects & Arrays</li>
+          <li>OOP Basics</li>
+          <li>Error Handling</li>
+          <li>Local Storage</li>
+          <li>JSON Handling</li>
+          <li>Debugging & Problem Solving</li>
+        </ul>
+      </div>
+
+      <!-- Python -->
+      <div class="skill-box">
+       <h2><i class="fa-brands fa-python"></i> Python</h2>
+        <ul>
+          <li>Variables & Data Types</li>
+          <li>Operators</li>
+          <li>Conditional Statements</li>
+          <li>Loops</li>
+          <li>Functions</li>
+          <li>Basic Problem Solving</li>
+        </ul>
+      </div>
+
+      <!-- Node.js -->
+      <div class="skill-box">
+        <h2><i class="fa-brands fa-node-js"></i> Node.js</h2>
+        <ul>
+          <li>Backend Development</li>
+          <li>npm & Packages</li>
+          <li>Modules</li>
+          <li>HTTP Requests & Responses</li>
+          <li>Asynchronous Programming</li>
+          <li>File Handling</li>
+          <li>Building Backend Applications</li>
+        </ul>
+      </div>
+
+      <!-- Express.js -->
+      <div class="skill-box">
+        <h2><i class="fa-brands fa-node-js"></i> Express.js</h2>
+        <ul>
+          <li>REST API Development</li>
+          <li>Routing</li>
+          <li>Middleware</li>
+          <li>Request & Response Handling</li>
+          <li>Error Handling</li>
+          <li>Authentication</li>
+          <li>Serving Static Files</li>
+        </ul>
+      </div>
+
+      <!-- MySQL -->
+      <div class="skill-box">
+        <h2><i class="fa-solid fa-database"></i> MySQL</h2>
+        <ul>
+          <li>Database Design</li>
+          <li>Creating Databases & Tables</li>
+          <li>SQL Queries</li>
+          <li>CRUD Operations</li>
+          <li>Relationships</li>
+          <li>Joins</li>
+          <li>Node.js & MySQL Integration</li>
+        </ul>
+      </div>
+
+      <!-- Git -->
+      <div class="skill-box">
+        <h2><i class="fa-brands fa-git"></i> Git</h2>
+        <ul>
+          <li>Version Control</li>
+          <li>Repository Management</li>
+          <li>Git Initialization</li>
+          <li>Commits</li>
+          <li>Branches</li>
+          <li>Merging</li>
+          <li>Remote Repositories</li>
+          <li>GitHub</li>
+          <li>Push & Pull</li>
+        </ul>
+      </div>
+
+    </div>
   </section>
 
   <script src="script.js"></script>
